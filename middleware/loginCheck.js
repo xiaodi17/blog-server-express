@@ -1,6 +1,6 @@
 const { ErrorModel } = require('../model/resModel')
 
-model.exports = (req, res, next) => {
+module.exports = (req, res, next) => {
   if (req.session.username) {
     next()
     return

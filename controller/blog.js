@@ -59,8 +59,14 @@ const updateBlog = (id, blogData = {}) => {
   })
 }
 
-const delBlog = id => {
-  //del id
-  return true
+const delBlog = (id, author) => {
+  const sql = `delete from blogs where id='${id}' and author='${author}';`
+  return exec(sql).then(delData => {
+    // console.log('delData is ', delData)
+    if (delData.affectedRows > 0) {
+      return true
+    }
+    return false
+  })
 }
 module.exports = { getList, getDetail, newBlog, updateBlog, delBlog }
