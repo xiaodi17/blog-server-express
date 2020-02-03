@@ -19,6 +19,8 @@ npm run dev
 Front-end page will be uploaded soon.
 
 ### Mysql
+
+Run the following sql script
 ```
 CREATE TABLE `blogs` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -39,6 +41,10 @@ CREATE TABLE `users` (
   `lastname` varchar(20) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+```
+
+```
+insert into users (id,username,password,firstname,lastname) values ('1','admin','admin','','')
 ```
 
 ## License
