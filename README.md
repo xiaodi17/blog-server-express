@@ -1,6 +1,6 @@
 # Blog Server - Node.js
 
-This project is a blog server that built by Express.js
+This project is a blog server that built by Express.js You can do CRUD blog post with this server.
 
 ## Getting Started
 
